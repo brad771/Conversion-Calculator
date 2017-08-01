@@ -22,10 +22,12 @@ class ViewController: UIViewController {
         
         inputTextField.text = inputs[choice-1]
         outputTextField.text = outputs[choice-1]
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
         
     }
     
@@ -154,6 +156,7 @@ class ViewController: UIViewController {
         
         let total = (new - 32) * (5/9)
         
+        //return String(round(100*total)/100) + " \u{00B0}C"
         return String(format: "%.2f", total ) + " \u{00b0}C"
         
     }
@@ -165,6 +168,7 @@ class ViewController: UIViewController {
         
         let total = new * (9/5) + 32
         
+        //return String(round((total*100)/100)) + " \u{00B0}F"
         return String(format: "%.2f", total ) + " \u{00b0}F"
         
     }
