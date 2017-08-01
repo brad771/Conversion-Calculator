@@ -22,12 +22,12 @@ class ViewController: UIViewController {
         
         inputTextField.text = inputs[choice-1]
         outputTextField.text = outputs[choice-1]
-      
+  
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-  
+      
         
     }
     
@@ -156,7 +156,6 @@ class ViewController: UIViewController {
         
         let total = (new - 32) * (5/9)
         
-        //return String(round(100*total)/100) + " \u{00B0}C"
         return String(format: "%.2f", total ) + " \u{00b0}C"
         
     }
@@ -168,7 +167,6 @@ class ViewController: UIViewController {
         
         let total = new * (9/5) + 32
         
-    
         return String(format: "%.2f", total ) + " \u{00b0}F"
         
     }
@@ -249,3 +247,4 @@ class ViewController: UIViewController {
     
     
 }
+
